@@ -1,0 +1,249 @@
+/*
+Theme Name: PLus PLus v2
+Theme URI: http://codigoplusplus.com
+Author: Oscar Ogando
+Author URI: http://codigoplusplus.com
+Description: This is codigoplusplus website 2.0. It is very user friendly and a lot faster than 1.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+body{
+    font-size: 18px;
+    font-family: Arvo, serif;
+  
+}
+
+/*the nav and the logobrand*/
+.navegador{
+    border-radius: 0px;
+    box-shadow: 2px 2px 2px #59764A;
+    background-color: #303030;
+    margin: 0px 0px;
+}
+.blue{
+    color: #D84D48;
+    text-align: center;
+}
+.navegador .navbar-nav > li > a:hover
+/*.navbar-inverse .navbar-nav > li > a:focus*/ {
+/*    background-color: white;*/
+    border-bottom: 1px solid #29659B;
+    padding-bottom: 4px;
+    color: #CDE7F4;
+    content: ' ';
+   
+    border: solid 5px transparent;
+    border-top: solid 0px transparent;
+    border-width: 5px;
+
+    margin-left: -5px;
+    border-color: #D84D48 transparent transparent transparent;
+}
+
+/*
+
+li:hover::after {
+    content: ' ';
+    position: absolute;
+    border: solid 10px transparent;
+    border-top: solid 0px transparent;
+    border-width: 15px;
+    left: 50%;
+    margin-left: -10px;
+    border-color: #D84D48 transparent transparent transparent;
+}
+*/
+
+ 
+.navbar.in ul li {
+   background-color: #888888;
+}
+.brandLogo{
+    height: 43px;
+    width: 40px;
+    margin-top: 0px;
+}
+.right {
+    float: right; 
+  }
+/*jumbotron styles*/
+.jumbotron{
+    background: url(img/Love-Coding.png) no-repeat;
+    height: 580px;
+    margin: 0px 0px;
+}
+
+.jumbotron h1{
+    color: #CCE7F0;
+    text-align: center;
+}
+.jumbotron p{
+    color: #29649E;
+    text-align: center;
+}
+/*the popup search window*/
+.btn-primary{
+    background-color: #D74D4A;
+}
+#search.open {
+    opacity: 1;
+    transform: translate(0px, 0px) scale(1, 1);
+}
+#search {
+    background-color: #222222;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s ease-in-out 0s;
+    width: 100%;
+    z-index: 2000;
+    
+}
+#search .close {
+    color: #be5254;
+    font-size: 40px;
+    opacity: 1;
+    padding: 10px 17px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+}
+button.close {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    cursor: pointer;
+}
+.close {
+    float: right;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+}
+
+#search input[type="text"] {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: #2B639C;
+    font-family: "Open Sans",sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin: -51px auto 0;
+    outline: medium none;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+#search .btn {
+    left: 50%;
+    margin-top: 60px;
+    padding: 10px 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.youknow-icon a {
+    background: #222222 none repeat scroll 0 0 !important;
+    border-radius: 40px !important;
+    color: #9D9D9D !important;
+    font-size: 26px;
+    height: 44px;
+    margin: 3px -12px 0 0;
+    padding: 7px 0 0 !important;
+    text-align: center;
+    width: 44px;
+}
+.popup-box-on {
+    display: block !important;
+}
+.off {
+    display: none;
+}
+/*the posts are here*/
+
+.itemsIn-portfolio {
+    margin-bottom: 25px;
+    
+}
+.col-md-4 h3 a{
+    color: #2A609E;
+/*    color: #CCE7F0;*/
+    text-decoration: none;
+}
+.col-md-4 h3 a:hover{
+    color: red;
+    text-decoration: none;
+}
+/*footer*/
+.footer{
+    background-color: #2B2B2B;
+    height: 200px;
+    padding: 2px 2px;
+    color: white;
+    border-right: 1px solid white;
+}
+
+.footer-col{
+    border-right: 1px solid white;
+    text-align: center;
+}
+.footer-icons{
+    border-right: 1px solid white;
+    text-align: center;
+}
+.footer-col a{
+    color: #D74D4A;
+    text-align: center;
+    text-decoration: none;
+}
+.footer-col a:hover{
+    color: #286090;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-col h2{
+    color: #CCE7F0;
+    text-align: center;
+    text-decoration: none;
+}
+/*deletes some of the footer items */
+@media only screen and (max-width: 990px) {
+        .footer-col h2, p{
+    display: none;
+}
+    .footer-icons{
+    border-right: 0px solid white;
+    text-align: center;
+}
+
+}
+/*about starts here*/
+ .bg-1 {
+      background-color: #D74D4A; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #303030; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+/*sidebar*/
+.sidebar{
+    margin-top: 80px;
+}
+.sidebar h2{
+    text-align: center;
+}
